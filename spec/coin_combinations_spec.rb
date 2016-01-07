@@ -15,7 +15,7 @@ describe('Float#coin_combinations') do
     expect((0.20).coin_combinations).to(eq("2 dimes"))
     expect((2.00).coin_combinations).to(eq("2 dollars"))
   end
-
+  
   it('replaces plural pennys with with pennies') do
     expect((0.02).coin_combinations).to(eq("2 pennies"))
   end
