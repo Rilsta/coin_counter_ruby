@@ -1,6 +1,10 @@
-<h1>Enter in money!</h1>
-<form action="/result">
-  <label>Enter in dat money: </label>
-  <input type="text" name="change">
-  <button type="submit">Submit</button>
-</form>
+<%= erb :_head %>
+<div class="row">
+  <form class="col-md-6 col-center" action="/result">
+    <fieldset class="form-group">
+      <label class="form-control">Enter in dat money: </label>
+      <input class="form-control" type="text" name="change">
+      <button class="btn btn-primary btn-block" type="submit">Submit</button>
+    </fieldset>
+  </form>
+</div>

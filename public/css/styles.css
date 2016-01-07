@@ -1,0 +1,30 @@
+body {
+  text-align: center;
+}
+
+.result {
+  font-size: 6em;
+  animation: blinker 0.7s linear infinite;
+}
+
+@keyframes blinker {
+  50% { opacity: 0.0; }
+}
+
+.jumbotron {
+  box-shadow: 10px 0px 10px #000;
+}
+
+.header {
+  margin: auto;
+}
+
+.col-center {
+  float: none;
+  margin: 0 auto;
+}
+
+input {
+  margin-bottom: 5px;
+  text-align: center;
+}
