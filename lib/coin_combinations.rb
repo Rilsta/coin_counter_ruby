@@ -4,10 +4,20 @@ class Float
                   [0, "nickel"],
                   [0, "dime"],
                   [0, "quarter"],
-                  [0, "dollar"]]
+                  [0, "dollar"],
+                  [0, "five"],
+                  [0, "ten"],
+                  [0, "twenty"],
+                  [0, "fifty"],
+                  [0, "hundred"]]
     output = ""
     change = self
     coin_values = {
+      100.00 => 9,
+      50.00 => 8,
+      20.00 => 7,
+      10.00 => 6,
+      5.00 => 5,
       1.00 => 4,
       0.25 => 3,
       0.10 => 2,
@@ -30,7 +40,7 @@ class Float
       temp = num[0].to_s + " " + num[1]
 
       if num[0] > 1
-        if num[1] == "penny"
+        if num[1] == "penny" || num[1] == "fifty"
           temp[-1] = ''
           temp += "ies"
         else

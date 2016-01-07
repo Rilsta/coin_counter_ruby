@@ -20,7 +20,7 @@ describe('Float#coin_combinations') do
     expect((0.02).coin_combinations).to(eq("2 pennies"))
   end
   it('accounts for mutiple coin combinations') do
-    expect((99.99).coin_combinations).to(eq("99 dollars, 3 quarters, 2 dimes, 4 pennies"))
+    expect((99.99).coin_combinations).to(eq("1 fifty, 2 twentys, 1 five, 4 dollars, 3 quarters, 2 dimes, 4 pennies"))
   end
 
 end
