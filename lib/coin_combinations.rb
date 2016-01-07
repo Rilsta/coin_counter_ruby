@@ -40,7 +40,7 @@ class Float
       temp = num[0].to_s + " " + num[1]
 
       if num[0] > 1
-        if num[1] == "penny" || num[1] == "fifty"
+        if num[1] == "penny" || num[1] == "twenty"
           temp[-1] = ''
           temp += "ies"
         else

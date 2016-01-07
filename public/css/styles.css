@@ -2,13 +2,26 @@ body {
   text-align: center;
 }
 
-.result {
-  font-size: 6em;
-  animation: blinker 0.7s linear infinite;
+.wrapper {
+  background-image: url('https://media.giphy.com/media/h0MTqLyvgG0Ss/giphy.gif');
+  background-size: cover;
+  height: 100vh;
 }
 
-@keyframes blinker {
-  50% { opacity: 0.0; }
+.result {
+  animation: colours 1s infinite;
+  font-size: 6em;
+}
+
+@-webkit-keyframes colours {
+      0% {color: #39f;}
+     15% {color: #8bc5d1;}
+     30% {color: #f8cb4a;}
+     45% {color: #95b850;}
+     60% {color: #944893;}
+     75% {color: #c71f00;}
+     90% {color: #bdb280;}
+    100% {color: #39f;}
 }
 
 .jumbotron {
